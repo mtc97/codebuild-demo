@@ -18,11 +18,11 @@ RUN pip install werkzeug==2.2.2
 RUN pip install -r requirements.txt
 
 # Set ENV variables
-ENV DB_USERNAME=myuser
-ENV DB_PASSWORD=${POSTGRES_PASSWORD}
-ENV DB_HOST=127.0.0.1
-ENV DB_PORT=5433
-ENV DB_NAME=mydatabase
+# ENV DB_USERNAME=myuser
+# ENV DB_PASSWORD=${POSTGRES_PASSWORD}
+# ENV DB_HOST=127.0.0.1
+# ENV DB_PORT=5433
+# ENV DB_NAME=mydatabase
 
 # Expose port 80
 EXPOSE 80
