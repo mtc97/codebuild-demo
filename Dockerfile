@@ -1,10 +1,10 @@
 FROM python:3.8.3-slim
 
 # Create a working directory
-WORKDIR /analytics
+WORKDIR /app
 
 # Copy source code to working directory
-COPY . app.py /analytics
+COPY . /app
 
 
 # Install packages from requirements.txt
