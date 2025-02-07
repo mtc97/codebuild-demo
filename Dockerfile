@@ -4,8 +4,9 @@ FROM python:3.8.3-slim
 WORKDIR /app
 
 # Copy source code to working directory
-COPY . /app
-
+COPY app.py /app
+COPY requirements.txt /app
+COPY config.py /app
 
 # Install packages from requirements.txt
 RUN apt update -y
