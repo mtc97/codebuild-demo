@@ -17,6 +17,9 @@ port_number = int(os.environ.get("APP_PORT", 5153))
 def health_check():
     return "ok"
 
+class Token(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    token_value = db.Column(db.String(256), unique=True, nullable=False)
 
 @app.route("/readiness_check")
 def readiness_check():
