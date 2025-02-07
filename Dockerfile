@@ -16,6 +16,7 @@ RUN pip install --upgrade Flask
 RUN pip install werkzeug==2.2.2
 RUN pip install -r requirements.txt
 
+ENTRYPOINT []
 # Set ENV variables
 #ENV DB_PASSWORD=${POSTGRES_PASSWORD}
 #ENV DB_HOST=127.0.0.1
